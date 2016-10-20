@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -28,55 +29,71 @@
                                             <frame key="frameInset" width="375" height="125"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="keu-Yg-PQs">
-                                                    <frame key="frameInset" minX="11" minY="47" width="65" height="65"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="keu-Yg-PQs">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="65" id="4F3-ZW-Fmu"/>
+                                                        <constraint firstAttribute="width" constant="65" id="Lse-qm-M5l"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CodePath - Yelp" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSN-qO-HGB">
-                                                    <frame key="frameInset" minX="11" minY="4" width="139" height="22"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CodePath - Yelp really long" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSN-qO-HGB">
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="3fI-3s-Ns6">
-                                                    <frame key="frameInset" minX="256" minY="3" width="21" height="24"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fork" translatesAutoresizingMaskIntoConstraints="NO" id="NsD-38-zVq">
-                                                    <frame key="frameInset" minX="320" minY="4" width="21" height="24"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2H-aL-yUV">
-                                                    <frame key="frameInset" minX="285" minY="4" width="18" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0R-d5-tQ6">
-                                                    <frame key="frameInset" minX="349" minY="3" width="11" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yelp Search client written in swift" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FL7-6y-5Jj">
-                                                    <frame key="frameInset" minX="97" minY="47" width="253" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="by jerrysu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rma-TD-FvR">
-                                                    <frame key="frameInset" minX="11" minY="24" width="76" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by jerrysu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rma-TD-FvR">
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="3fI-3s-Ns6"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fork" translatesAutoresizingMaskIntoConstraints="NO" id="NsD-38-zVq"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2H-aL-yUV">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0R-d5-tQ6">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yelp Search client written in swift" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FL7-6y-5Jj">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="keu-Yg-PQs" firstAttribute="leading" secondItem="rma-TD-FvR" secondAttribute="leading" id="0zj-5J-1jR"/>
+                                                <constraint firstItem="FL7-6y-5Jj" firstAttribute="leading" secondItem="keu-Yg-PQs" secondAttribute="trailing" constant="21" id="6DL-Bu-fvT"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="FL7-6y-5Jj" secondAttribute="bottom" constant="13" id="7w8-uv-Idj"/>
+                                                <constraint firstItem="FL7-6y-5Jj" firstAttribute="top" secondItem="keu-Yg-PQs" secondAttribute="top" id="Jkn-gE-iey"/>
+                                                <constraint firstItem="NsD-38-zVq" firstAttribute="leading" secondItem="Z2H-aL-yUV" secondAttribute="trailing" constant="17" id="Jyb-dO-5wf"/>
+                                                <constraint firstItem="rma-TD-FvR" firstAttribute="leading" secondItem="hSN-qO-HGB" secondAttribute="leading" id="Kl6-k2-acE"/>
+                                                <constraint firstItem="Z2H-aL-yUV" firstAttribute="leading" secondItem="3fI-3s-Ns6" secondAttribute="trailing" constant="8" id="LBT-50-sVD"/>
+                                                <constraint firstItem="hSN-qO-HGB" firstAttribute="top" secondItem="1Ge-sa-sPX" secondAttribute="top" constant="4" id="PfJ-9W-tV1"/>
+                                                <constraint firstAttribute="trailing" secondItem="W0R-d5-tQ6" secondAttribute="trailing" constant="15" id="VUa-1f-7Rh"/>
+                                                <constraint firstItem="W0R-d5-tQ6" firstAttribute="leading" secondItem="NsD-38-zVq" secondAttribute="trailing" constant="8" id="gU0-83-3MF"/>
+                                                <constraint firstItem="keu-Yg-PQs" firstAttribute="top" secondItem="rma-TD-FvR" secondAttribute="bottom" constant="5" id="hVz-Tn-1Yg"/>
+                                                <constraint firstItem="Z2H-aL-yUV" firstAttribute="top" secondItem="1Ge-sa-sPX" secondAttribute="top" constant="4" id="kWp-N7-uKj"/>
+                                                <constraint firstItem="3fI-3s-Ns6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hSN-qO-HGB" secondAttribute="trailing" constant="8" id="ktN-Oq-Duq"/>
+                                                <constraint firstItem="rma-TD-FvR" firstAttribute="top" secondItem="1Ge-sa-sPX" secondAttribute="topMargin" constant="16" id="nEg-NR-Yqa"/>
+                                                <constraint firstItem="hSN-qO-HGB" firstAttribute="leading" secondItem="1Ge-sa-sPX" secondAttribute="leading" constant="11" id="oPP-nw-8Fh"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FL7-6y-5Jj" secondAttribute="trailing" constant="15" id="uhC-OP-hwB"/>
+                                                <constraint firstItem="3fI-3s-Ns6" firstAttribute="top" secondItem="1Ge-sa-sPX" secondAttribute="top" constant="4" id="usP-9J-91H"/>
+                                                <constraint firstItem="NsD-38-zVq" firstAttribute="top" secondItem="1Ge-sa-sPX" secondAttribute="top" constant="4" id="vae-5t-V9X"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="keu-Yg-PQs" secondAttribute="bottom" constant="13" id="ya4-94-40w"/>
+                                                <constraint firstItem="W0R-d5-tQ6" firstAttribute="top" secondItem="1Ge-sa-sPX" secondAttribute="top" constant="4" id="yzV-ez-JVb"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="avatarImageView" destination="keu-Yg-PQs" id="MWk-y5-Pcq"/>
+                                            <outlet property="descriptionLabel" destination="FL7-6y-5Jj" id="6IG-lZ-XfK"/>
+                                            <outlet property="forkCountLabel" destination="W0R-d5-tQ6" id="iRL-Gb-Gaq"/>
+                                            <outlet property="ownerLabel" destination="rma-TD-FvR" id="3Ee-4g-4E4"/>
+                                            <outlet property="projectNameLabel" destination="hSN-qO-HGB" id="jes-dy-jvB"/>
+                                            <outlet property="starCountLabel" destination="Z2H-aL-yUV" id="IMV-Dm-I9N"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
