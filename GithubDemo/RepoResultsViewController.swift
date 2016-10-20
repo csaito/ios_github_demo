@@ -87,6 +87,10 @@ class RepoResultsViewController: UIViewController, UITableViewDataSource, UITabl
         return cell
     }
     
+    @IBAction func saveButtonUnwindSegue(unwindSegue: UIStoryboardSegue) {
+        self.searchSettings.minStars = (unwindSegue.source as! SettingsViewController).minimumStars
+    }
+    
 }
 
 // SearchBar methods
